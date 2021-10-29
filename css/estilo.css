@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: Anime;
+    src: url(../fonts/Pokemon\ Hollow.ttf);
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: Altone;
+    src: url(../fonts/AltoneTrial-Regular.ttf);
+    font-weight: normal;
+}
+
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor1: #202020;
+    --cor2: #ffffff;
+    --cor3: #c4c4c4;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-quadro: 'Altone';
+    --font-anime: 'Anime', cursive;
+}
+
+/*Cabeçalho*/
+header{
+    background-color: var(--cor1);
+    height: 100px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px var(--cor1);
+}
+
+header > h1{
+    color: var(--cor2);
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.2em;
+    font-family: var(--font-anime);
+}
+
+/*Corpo primário*/
+body{
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor2));
+}
+
+/*Corpo secundário*/
+main{
+    max-width: 600px;
+    margin: auto;
+    padding: 10px;
+    color: var(--cor2);
+}
+
+main > article{
+    border-radius: 10px;
+    background-color: var(--cor1);
+    padding: 7px;
+}
+
+/*Sessão*/
+article{
+    margin: 10px;
+    text-align: justify;
+    font-size: 1.2em;
+    box-shadow: 2px 2px 10px var(--cor1);
+}
+
+article > h2{
+    margin: 25px 25px 3px 5px;
+    font-family: var(--font-anime);
+    text-align: left;
+}
+
+article > p{
+    margin: 10px;
+    font-family: var(--fonte-padrao);
+}
+
+figure{
+    background-color: var(--cor3);
+    color: var(--cor1);
+    border-radius: 5px;
+    padding: 4px;
+    font-family: var(--fonte-quadro);
+}
+figure > img{
+    width: 100%;
+    
+}
+
+/*Rodape*/
+footer{
+    background-color: var(--cor1);
+    height: 30px;
+    padding: 5px;
+    box-shadow: 2px 2px 10px var(--cor1);
+}
+
+footer > p{
+    font-family: var(--font-anime);
+    text-align: center;
+    color: var(--cor2);
+    font-size: 1.5em;
+}
